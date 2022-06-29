@@ -7,7 +7,7 @@
 // ==/UserScript
 (function () {
   const abornString = 'あぼ～ん';
-  const ng_words = ['\u751f','\u6b7b'];
+  const ng_words = ['\u751f','\u6b7b']; //■NGワードの作成はこちらから→■https://webaborn.herokuapp.com/
   var webaborn = function(node){
     var candidates = document.evaluate('.//text()[not(parent::style) and not(parent::textarea) and not(parent::script)]', node, null, 6, null);
     var i, j, lenC, lenNG, txt;
