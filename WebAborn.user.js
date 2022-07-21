@@ -21,8 +21,8 @@
   const abornString = 'あぼ～ん';
   //以下は\uで始まるユニバーサル文字で設定されていますが、日本語や英語をそのまま設定しても動作します。
   //The following is set with universal characters starting with \ u, but it will work even if Japanese or English is set as it is.
-  //動作しない場合は、改行文字\u000D\u000Aが含まれていないことを確認してください。
-  //If it doesn't work, make sure the the newline character \u000D\u000A is not included.
+  //動作しない場合は、改行文字 \u000D\u000A や \r\n が含まれていないことを確認してください。
+  //If it doesn't work, make sure the the newline character \u000D\u000A or \r\n is not included.
   const ng_words = ['\u751f','\u6b7b']; //←左記は例です。 <- The left is an example.
   var webaborn = function(node){
     var candidates = document.evaluate('.//text()[not(parent::style) and not(parent::textarea) and not(parent::script)]', node, null, 6, null);
